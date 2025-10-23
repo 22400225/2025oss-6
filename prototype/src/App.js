@@ -59,7 +59,7 @@ function App() {
     // 상태 관리
     const [query, setQuery] = useState('');
     const [tracks, setTracks] = useState([]);
-    const [message, setMessage] = useState('듣고 싶은 노래를 검색해 보세요!');
+    const [message, setMessage] = useState('듣고 싶은 노래를 검색해 보세요');
     const [playlists, setPlaylists] = useState([]);
     const [activeView, setActiveView] = useState({ type: 'search' });
     const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
@@ -164,6 +164,8 @@ function App() {
             </div>
         </div>
     );
+
+
 
     const renderContent = () => {
         if (activeView.type === 'playlist') {
